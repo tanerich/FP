@@ -1,6 +1,4 @@
-// FAQ //
-
-  /*const btns = document.querySelectorAll(".question-btn");
+/* const btns = document.querySelectorAll(".question-btn");
 
 btns.forEach(function(btn){
 
@@ -14,28 +12,19 @@ btns.forEach(function(btn){
    
  })
 
-})*/
-
+}) */
 
 const questions = document.querySelectorAll(".question");
 
-questions.forEach(function(question){
+questions.forEach(function (question) {
+  const btn = question.querySelector(".question-btn");
 
-  const btn =question.querySelector(".question-btn")
-  
-  btn.addEventListener("click", function(){
-    
-    questions.forEach(function(item){
-      
-     if(item !== question){
-
-      item.classList.remove("text")
-     }
-
-    })
-     question.classList.toggle("text");
-  })
-
-})
-
-console.log(3 +"1"+"1");
+  btn.addEventListener("click", function () {
+    questions.forEach(function (item) {
+      if (item !== question) {
+        item.classList.remove("text");
+      }
+    });
+    question.classList.toggle("text");
+  });
+});
