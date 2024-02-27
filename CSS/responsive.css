@@ -1,0 +1,288 @@
+/******** IPAD *******/
+
+@media screen and (max-width: 799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    transition: 0.8s ease;
+    padding: 80px 0 0 10px;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    background-color: rgb(252, 196, 124);
+  }
+
+  /*** class active läggs med javascript***/
+  #navbar .active {
+    right: 10px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+  }
+
+  #Close {
+    display: initial;
+    font-size: 24px;
+    color: #222;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .main {
+    padding: 20px;
+    background-attachment: scroll;
+  }
+
+  .main .main-info {
+    padding: 30px 30px;
+  }
+
+  .main .main-info h2 {
+    font-size: 2.2em;
+  }
+  .main .main-info h3 {
+    padding-bottom: 20px;
+  }
+
+  .btn {
+    padding: 15px 80px;
+    margin-top: 20px;
+  }
+
+  .treatYourSelf-div {
+    gap: 10px;
+  }
+
+  .treatYourSelf-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  #Meny h1 {
+    font-size: 2rem;
+  }
+
+  .dipsåser img {
+    position: absolute;
+    right: -15px;
+  }
+
+  .about {
+    padding: 5px;
+  }
+
+  .about-div {
+    gap: 40px;
+  }
+
+  .about-div h2 {
+    font-size: 1.6em;
+    font-weight: 800;
+  }
+  .about-div img {
+    height: 300px;
+  }
+
+  .banner {
+    padding: 10px;
+  }
+
+  .contact {
+    margin: 0;
+    padding: 5px;
+  }
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .allergener {
+    background-attachment: fixed;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
+
+/************** Mobile ****************/
+
+@media screen and (max-width: 477px) {
+
+  body{
+    font-size: 12px;
+  }
+
+  #header {
+    padding: 0px 10px;
+  }
+
+  #header img {
+    width: 150px;
+  }
+  #navbar {
+    width: 225px;
+  }
+
+  .main .main-info h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+
+  .main-info h3 {
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+
+  #Meny {
+    padding: 10px 5px;
+  }
+
+  #Meny h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .burger-ingredients {
+    margin-right: 5px;
+  }
+
+  .burger-name h4 {
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  .meny-devision {
+    flex-direction: column;
+    align-items: center;
+  }
+  .burgers {
+    width: 100%;
+    margin: 0;
+    padding: 5px 20px;
+  }
+
+  .dipsåser img {
+    width: 80px;
+  }
+
+  .treatYourSelf-div {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .treatYourSelf-div img {
+    width: 100vw;
+    height: 300px;
+  }
+
+  .about {
+    padding: 5px 5px;
+  }
+
+  .about-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-div1 {
+    text-align: center;
+  }
+  .about-div h2 {
+    font-size: 1.3em;
+  }
+  .about-div h3 {
+    font-size: 1.1em;
+  }
+
+  .about-div img {
+    width: 100vw;
+    height: 500px;
+  }
+  .banner {
+    padding-top: 20px;
+  }
+
+  .banner h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .banner .banner-details h3 {
+    font-size: 1rem;
+  }
+
+  .contact-header img {
+    width: 120px;
+  }
+
+  .contact-card {
+    width: 160px;
+    margin: 0 0 10px 10px;
+  }
+  .contact-info .contact-card p {
+    font-size: 0.8em;
+  }
+
+  .contact-info .contact-card a {
+    font-size: 0.8em;
+  }
+  .app-icons img {
+    width: 100px;
+  }
+
+  .contact-info .contact-card h2 {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .follow .social-icons {
+    margin-bottom: 15px;
+  }
+
+  .animation {
+    font-size: 1em;
+    padding: 0 5px;
+  }
+.allergener h2{
+  font-size: 1.8rem;
+}
+  .card {
+    width: 15rem;
+  }
+
+  .ingredients p {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    font-size: 10px;
+  }
+
+  .card {
+    width: 15rem;
+  }
+
+  .ingredients p {
+    padding: 10px;
+  }
+
+  .btn a {
+    display: block;
+  }
+}

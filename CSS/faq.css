@@ -1,0 +1,129 @@
+/******************* Google font ***************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #088178;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/******************  Global Styles **********************/
+
+body{
+  background-color: #e4dfd9;
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.title h2 {
+  background: url(../img/button.png) center/cover no-repeat;
+  color:var(--primary-color);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+.question {
+  width: 85vw;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 20px 15px 10px rgba(1,1,1,30%);
+  padding: 1.5em 1.5em 0 1.5em;
+  margin: 50px 35px;
+}
+
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 1em;
+}
+
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  color: grey;
+}
+.question-btn{
+  font-size: 1.5em;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: green;
+  transition: 0.5s ease;
+}
+
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+.question-text {
+  padding: 1em 0 1.5em 0;
+}
+.question-text p {
+  margin-bottom: 0;
+}
+
+/* hide text */
+
+.question-text {
+  display: none;
+}
+ .text .question-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+
+
+.text .minus-icon {
+  display: inline;
+}
+.text .plus-icon {
+  display: none;
+}
+
+
+@media  screen and (max-width:799px) {
+   body{
+
+    font-size: 12px;
+   }
+  .title{
+    margin-top: 25px;
+    
+  }
+
+  .title h2{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:477px){
+
+  body{
+    font-size: 10px;
+  }
+
+   .questions .title {
+    margin-top: 5vh;
+    margin-bottom: 1rem;
+  }
+ 
+  .questions .title h2{
+    font-size: 1.5rem;
+  }
+}

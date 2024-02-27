@@ -1,0 +1,534 @@
+/******************* Google font ***************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #088178;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/******************  Global Styles **********************/
+
+#header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(252, 196, 124);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  padding: 0px 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative; /*position relative behövs för close knappen som ska ha position absolute i mobile versionen*/
+}
+
+#navbar li a {
+  font-size: 1em;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: var(--primary-color);
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#Close {
+  display: none;
+}
+
+#mobile {
+  display: none;
+}
+
+#header .logo:hover {
+  opacity: 0.6;
+}
+
+/*************** Main section ***************/
+
+section {
+  padding: 90px 90px;
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../img/BRGR2.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+}
+.main-info h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.main-info h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.main-info h3 span {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.main-info p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn{
+  background: url(../img/button.png) center no-repeat;
+  background-color: #ffd700;
+  color: #000016;
+  padding: 14px 80px 14px 65px;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.7s ease;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+.main-info {
+  user-select: none;
+}
+/************ Treat Yo'Self section *************/
+.treatYourSelf {
+  width: 100vw;
+  background-color: beige;
+}
+
+.treatYourSelf-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.treatYourSelf-div h1 {
+  margin-bottom: 20px;
+}
+
+.treatYourSelf-div p {
+  margin-bottom: 20px;
+}
+
+/************************ About section*******************************/
+
+.about {
+  width: 100vw;
+  padding: 10px;
+  background: url(../img/bakground-image-OmOss.png) center/cover no-repeat;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.about-div h2 {
+  color: #000016;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-div h3 {
+  color: #000016;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.about-div p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.about-div .btn {
+  margin-top: 10px;
+}
+
+/******************** Meny section *********************/
+
+#Meny {
+  padding: 30px 10px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #e4dfd9;
+}
+
+#Meny h1 {
+  background: url(../img/button.png) center/cover no-repeat;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.burger-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.burger-name h4 {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.meny-devision {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burgers {
+  width: 50%;
+  margin: 0px 20px;
+  padding: 20px 20px;
+}
+.vegan-section {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.veggie-section {
+  background-color: #e79796;
+  color: white;
+  padding: 30px 20px;
+}
+
+.burgers ul {
+  margin-left: 20px;
+}
+
+.burgers ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.dipsåser {
+  position: relative;
+}
+.dipsåser img {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+/***************** AllERGENER section ****************/
+
+.allergener h2 {
+  background: url(../img/button.png) center/cover no-repeat;
+  color:#000016;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.allergener {
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../img/HolyBurgers-3-1.jpg) center/cover no-repeat;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 21.25rem;
+  min-height: 200px;
+  background-color: #e4dfd9;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+  margin: 10px 10px;
+  transition: 1.5s ease;
+}
+
+.card .info .vegansk-burgare {
+  color: var(--primary-color);
+}
+.card .info .vegetarisk-burgare {
+  color: var(--primary-color);
+}
+
+.card:hover {
+  opacity: 0;
+}
+
+.info h6 {
+  color: #cc0000;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 20px;
+}
+.ingredients {
+  text-align: center;
+}
+.ingredients a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 5px;
+  border-radius: 5px 20px 5px;
+}
+
+
+.ingredients .gluten {
+  background-color: orange;
+}
+.ingredients .senap {
+  background-color: burlywood;
+}
+
+.ingredients .laktos {
+  background-color: #000016;
+}
+
+.ingredients .selleri {
+  background-color: coral;
+}
+
+.ingredients .sulfit {
+  background-color: blue;
+}
+
+.ingredients p {
+  margin-top: 20px;
+}
+
+/****************** Banner section *****************/
+
+.banner {
+  width: 100vw;
+  background: url(../img/mecenat.jpg) center/cover;
+  min-height: 20vh;
+  text-align: center;
+  transition: 0.7s ease;
+}
+.banner:hover {
+  transform: scale(1.1);
+}
+.banner h2 {
+  background: url(../img/button.png) center no-repeat;
+  color: #cc0000;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.banner .banner-details h3 {
+  color: #000016;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.banner .banner-details h3 span {
+  color: #cc0000;
+}
+
+.banner .banner-details p {
+  color: grey;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.banner .banner-details p:hover {
+  color: #cc0000;
+}
+
+/******************* Kontakt section ****************/
+
+.contact {
+  width: 100vw;
+  background-color: #ddddda;
+  color: #000016;
+}
+
+.contact-header .logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.contact-header {
+  text-align: center;
+}
+
+/*********** Animation **************/
+
+.contact-animation {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.animation {
+  background: url(../img/button.png) center/cover no-repeat;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0px 80px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.animation .div1 {
+  animation: show 6s infinite;
+}
+
+.animation .div2 {
+  width: 0px;
+  animation: reveal 6s infinite;
+}
+
+.animation span {
+  margin-left: -355px;
+  animation: slidein 6s infinite;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+
+  20% {
+    margin-left: -800px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  35% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+
+/*******************************/
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-info .contact-card h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.contact-info .contact-card p {
+  margin-bottom: 15px;
+}
+
+.contact-card {
+  width: 21.25rem;
+  margin-left: 15px;
+}
+
+.contact-card .follow .social-icons i {
+  margin-right: 4px;
+  transition: 0.7s ease;
+}
+
+.contact-card .follow .social-icons i:hover {
+  transform: scale(1.1);
+  color: var(--primary-color);
+}
+
+.contact-card .app-icons img {
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
