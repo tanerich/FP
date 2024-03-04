@@ -1,4 +1,6 @@
-/* const btns = document.querySelectorAll(".question-btn");
+/* 
+
+const btns = document.querySelectorAll(".question-btn");
 
 btns.forEach(function(btn){
 
@@ -8,11 +10,13 @@ btns.forEach(function(btn){
 
     const question = e.currentTarget.parentElement.parentElement;
     console.log(question);
-    question.classList.toggle("show-text")
+    question.classList.toggle("text")
    
  })
 
-}) */
+}) 
+
+*/
 
 const questions = document.querySelectorAll(".question");
 
