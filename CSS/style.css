@@ -122,7 +122,7 @@ section {
   margin-bottom: 20px;
 }
 
-.btn{
+.btn {
   background: url(../img/button.png) center no-repeat;
   background-color: #ffd700;
   color: #000016;
@@ -170,7 +170,7 @@ section {
 .about {
   width: 100vw;
   padding: 10px;
-  background: url(../img/bakground-image-OmOss.png) center/cover no-repeat;
+  background: #e4dfd9;
 }
 
 .about-div {
@@ -275,7 +275,7 @@ section {
 
 .allergener h2 {
   background: url(../img/button.png) center/cover no-repeat;
-  color:#000016;
+  color: #000016;
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -335,7 +335,6 @@ section {
   padding: 10px 5px;
   border-radius: 5px 20px 5px;
 }
-
 
 .ingredients .gluten {
   background-color: orange;
@@ -531,4 +530,3 @@ section {
   text-align: center;
   margin-top: 50px;
 }
-
